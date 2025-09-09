@@ -1,47 +1,150 @@
----
-# Page meta info, like heading, footer text and nav links
 pageInfo:
-  title: Dashy
-  description: Welcome to your new dashboard!
+  title: ✨𝓜𝓔𝓘𝓑𝓐𝓞
+  description: Les impossibles jours de cris de larmes coulent en silence.
+  footerText: Les impossibles jours de cris de larmes coulent en silence.
   navLinks:
-  - title: GitHub
-    path: https://github.com/Lissy93/dashy
-  - title: Documentation
-    path: https://dashy.to/docs
-
-# Optional app settings and configuration
+    - title: 🐱GitHub
+      path: https://github.com/Lissy93/dashy
+    - title: 📑Documentation
+      path: https://dashy.to/docs
 appConfig:
-  theme: colorful
-
-# Main content - An array of sections, each containing an array of items
+  language: cn
+  theme: glow
+  layout: horizontal
+  iconSize: large
+  customColors:
+    glow:
+      primary: '#5c6da9'
+      background: '#f6f6f6'
+      background-darker: null
+  customCss: >-
+    .home {--font-headings: Microsoft YaHei;--font-body: Microsoft
+    YaHei;--font-monospace: Microsoft YaHei;}
+  statusCheck: true
+  webSearch:
+    disableWebSearch: true
+    searchEngine: google
+  enableFontAwesome: true
+  enableMaterialDesignIcons: true
+  hideComponents:
+    hideHeading: false
+    hideNav: false
+    hideSearch: false
+    hideSettings: true
+    hideFooter: true
 sections:
-- name: Getting Started
-  icon: fas fa-rocket
-  items:
-  - title: Dashy Live
-    description: Development a project management links for Dashy
-    icon: https://i.ibb.co/qWWpD0v/astro-dab-128.png
-    url: https://live.dashy.to/
-    target: newtab
-  - title: GitHub
-    description: Source Code, Issues and Pull Requests
-    url: https://github.com/lissy93/dashy
-    icon: favicon
-  - title: Docs
-    description: Configuring & Usage Documentation
-    provider: Dashy.to
-    icon: far fa-book
-    url: https://dashy.to/docs
-  - title: Showcase
-    description: See how others are using Dashy
-    url: https://github.com/Lissy93/dashy/blob/master/docs/showcase.md
-    icon: far fa-grin-hearts
-  - title: Config Guide
-    description: See full list of configuration options
-    url: https://github.com/Lissy93/dashy/blob/master/docs/configuring.md
-    icon: fas fa-wrench
-  - title: Support
-    description: Get help with Dashy, raise a bug, or get in contact
-    url: https://github.com/Lissy93/dashy/blob/master/.github/SUPPORT.md
-    icon: far fa-hands-helping
-  
+  - name: 导航
+    icon: fas fa-house
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - &ref_0
+        title: 电脑开荒网
+        description: 找工具不迷路
+        icon: favicon
+        url: https://dnkh.mwks77.cn/
+        id: 0_56870_
+      - &ref_1
+        title: LKs
+        description: LKs网站推荐合集
+        icon: favicon
+        url: https://lkssite.vip/
+        id: 1_56870_lks
+      - &ref_2
+        title: oimimo
+        description: 小画手参考
+        icon: https://www.oimimo.cn/wp-content/uploads/2025/07/1753812828-logo.jpg
+        url: https://www.oimimo.cn/
+        id: 2_56870_oimimo
+    filteredItems:
+      - *ref_0
+      - *ref_1
+      - *ref_2
+  - name: 灵感
+    icon: fas fa-book
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - &ref_3
+        title: 书格
+        icon: favicon
+        url: https://new.shuge.org/
+        id: 0_53652_
+      - &ref_4
+        title: 纪妖
+        icon: https://www.cbaigui.com/favicon.ico
+        url: https://www.cbaigui.com/
+        id: 1_53652_
+      - &ref_5
+        title: 古籍文献知识图谱网
+        icon: favicon
+        url: https://cnkgraph.com/
+        id: 2_53652_
+      - &ref_6
+        title: 纹藏
+        icon: https://www.wenzang.cn/assets/home_white-06765Tag.png
+        url: https://www.wenzang.cn/
+        id: 3_53652_
+      - &ref_7
+        title: 麦田艺术
+        description: 收尽世界名画，无水印高清油画免费下载
+        icon: favicon
+        url: https://www.nbfox.com/
+        id: 4_53652_
+      - &ref_8
+        title: 故宫博物院
+        icon: favicon
+        url: https://www.dpm.org.cn/
+        id: 5_53652_
+      - &ref_9
+        title: 梦馆
+        description: 京都和服租借
+        icon: https://www.yumeyakata.com/favicon.ico
+        url: https://www.yumeyakata.com/
+        id: 6_53652_
+      - &ref_10
+        title: PDF艺术社
+        icon: favicon
+        url: https://www.pdf-art.com/
+        id: 7_53652_pdfart
+      - &ref_11
+        title: 国风网
+        icon: favicon
+        url: https://www.zhongguofeng.com/
+        id: 8_53652_guofeng
+      - &ref_12
+        title: 知网工具书
+        icon: favicon
+        url: https://mall.cnki.net/reference
+        id: 9_53652_cnki
+      - &ref_13
+        title: Gallery
+        icon: favicon
+        url: https://www.yorkeantiquetextiles.com/?ref=nav.aeepro.com
+        id: 10_53652_gallery
+      - &ref_14
+        title: 必应壁纸
+        icon: favicon
+        url: https://bing.ioliu.cn/
+        id: 11_53652_bing
+    filteredItems:
+      - *ref_3
+      - *ref_4
+      - *ref_5
+      - *ref_6
+      - *ref_7
+      - *ref_8
+      - *ref_9
+      - *ref_10
+      - *ref_11
+      - *ref_12
+      - *ref_13
+      - *ref_14
